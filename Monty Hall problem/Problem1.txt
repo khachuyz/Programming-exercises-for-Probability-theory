@@ -1,0 +1,17 @@
+The Monty Hall problem is a brain teaser, in the form of a probability puzzle, loosely based on the American television game show "Let's Make a Deal" and named after its original host, Monty Hall. The problem was originally posed (and solved) in a letter by Steve Selvin to the American Statistician in 1975. It became famous as a question from a reader's letter quoted in Marilyn vos Savant's "Ask Marilyn" column in Parade magazine in 1990:
+
+Suppose you're on a game show, and you're given the choice of three doors: Behind one door is a car; behind the others, goats. You pick a door, say No. 1, and the host, who knows what's behind the doors, opens another door, say No. 3, which has a goat. He then says to you, "Do you want to pick door No. 2?" Is it to your advantage to switch your choice?"
+
+There are three possible answers:
+Yes, it is worth changing the original choice.
+No, I would keep the original choice (I could not bear to have missed the opportunity).
+All the same, I may keep or change my decision, it does not change the chance of winning the car.
+Write a program, which simulate 1000 times all these three playing strategies. The program:
+- choose a door which will be the winner choice (the car is behind that door),
+- in the role of the player randomly choose a door from the three doors independently from the previous choice (hoping that the car is there),
+- in the role of the host, choose (randomly) a door which hides a goat and different from the door chosen by the player,
+- in the role of the player í1000 times keep the original decision, in the next 1000 cases change the original decision, and the last 1000 cases with probability 0.5 either keep or change the original decision and
+- finally the write out the three relative frequencies of winning the car in the next form (of course with other numbers)
+        Keep the decision      0.457
+        Change the decision    0.568
+        All the same           0.347
